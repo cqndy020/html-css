@@ -1,19 +1,20 @@
+.fill-form {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .email {
     margin-top: 5px;
     display: block;
     width: 211px;
     border-radius: 4px;
     border-style: solid;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
-.form {
+.name {
     border-radius: 4px;
     width: 100px;
     border-style: solid;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 .sign-up-button {
