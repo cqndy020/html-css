@@ -8,6 +8,10 @@
     border-radius: 5px;
 }
 
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
 .video-preview {
     width: 400px;
     display: inline-block;
@@ -18,7 +22,7 @@
 .video-title {
     font-weight: bold;
     height: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .video-author {
@@ -34,7 +38,15 @@
     color: rgb(92, 92, 92);
 }
 
-.text-style {
+.video-details {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    display: inline-block;
+    width: 250px;
+}
+
+.channel-logo {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100px;
 }
