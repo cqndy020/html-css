@@ -53,11 +53,13 @@ p {
 
 .profile-picture {
     display: inline-block;
-    vertical-align: top;
     border-radius: 100px;
     width: 40px;
 }
 
 .channel-logo {
-    width: 100%;
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
 }
