@@ -17,6 +17,11 @@ p {
     margin-bottom: 12px;
 }
 
+.video-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
 .video-preview {
     width: 400px;
     display: inline-block;
@@ -33,7 +38,7 @@ p {
 }
 
 .video-author, .video-status {
-    color: rgb(92, 92, 92);
+    color: rgb(96, 96, 96);
     font-size: 12px;
 }
 
@@ -47,19 +52,9 @@ p {
 
 .video-details {
     font-size: 12px;
-    display: inline-block;
-    width: 200px;
 }
 
 .profile-picture {
-    display: inline-block;
     border-radius: 100px;
     width: 40px;
-}
-
-.channel-logo {
-    width: 40px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 5px;
 }
