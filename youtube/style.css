@@ -17,16 +17,16 @@ p {
     margin-bottom: 12px;
 }
 
+.grid-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 35px;
+}
+
 .video-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
-}
-
-.video-preview {
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
 }
 
 .video-title {
