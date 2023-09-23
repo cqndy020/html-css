@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+    <style>
+        .noti-box {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin-left: 400px;
+            margin-top: 50px;
+            width: 350px;
+            border-color: gray;
+            border-width: 1px;
+            border-radius: 4px;
+            border-style: solid;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .noti-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 13px;
+        }
+
+        .num {
+            background-color: rgb(96, 122, 242);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            width: 35px;
+            text-align: center;
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="noti-box">
+        <div class="noti-section">
+            <div>Home</div>
+            <div class="num">14</div>
+        </div>
+        <div class="noti-section">
+            <div>Notifications</div>
+            <div class="num">3</div>
+        </div>
+        <div class="noti-section">
+            <div>Messages</div>
+            <div class="num">5</div>
+        </div>
+    </div>
+</body>
+</html>
