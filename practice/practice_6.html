@@ -41,6 +41,30 @@
             width: 350px;
             font-size: 14px;
         }
+
+        .right-section {
+            width: 75px;
+            padding-right: 30px;
+            padding-top: 5px;
+        }
+
+        .download-button {
+            height: 35px;
+            width: 100px;
+            background-color: rgba(206, 35, 212, 0.751);
+            color: white;
+            border-color: white;
+            border-style: solid;
+            border-radius: 3px;
+            border-width: 1.5px;
+            transition: color 0.2s, background-color 0.2s;
+        }
+
+        .download-button:hover {
+            cursor: pointer;
+            color: rgba(206, 35, 212, 0.751);
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +76,7 @@
             <input class="search-button" type="text" placeholder="Search">
         </div>
         <div class="right-section">
-            <button type="button">Download</button>
+            <button type="button" class="download-button">Download</button>
         </div>
     </div>
 </body>
