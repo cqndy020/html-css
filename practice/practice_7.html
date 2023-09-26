@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 360px;
+            margin-left: 50px;
+            margin-top: 30px;
+            border-color: gray;
+            border-width: 1.5px;
+            border-style: solid;
+            border-radius: 2px;
+            padding-top: 2px;
+            padding-left: 5px;
+            padding-bottom: 1px;
+            padding-right: 8px;
+            box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        .email-inbox {
+            margin-top: 5px;
+            margin-left: 4px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .inbox-section {
+            color: gray;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+        }
+
+        .picture {
+            padding-left: 6px;
+            padding-top: 15px;
+        }
+
+        .pfp-photo {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+
+        .flex-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 35px;
+        }
+
+        .promo {
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        .time, .message {
+            color: gray;
+        }
+
+        .article {
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 2px;
+        }
+
+        .message {
+            margin-top: 0;
+        }
+
+        .time {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inbox-section">
+            <div class="email-inbox">ALL INBOXES</div>
+        </div>
+        <div class="grid">
+            <div class="picture">
+                <img class="pfp-photo" src="images/p3.jpg" alt="cute-cat-photo">
+            </div>
+            <div>
+                <div class="flex-section">
+                    <p class="promo">Chewy Promotions</h3>
+                    <div class="time">4:58 PM</div>
+                </div>
+                <p class="article">Biggest sales of the year!</p>
+                <p class="message">Hey there! We're writing to tell you about our...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
