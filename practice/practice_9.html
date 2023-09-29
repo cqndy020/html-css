@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 2nd practice</title>
+    <style>
+        .box {
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            padding-right: 50px;
+            background-color: rgb(218, 202, 202);
+        }
+
+        .profile-picture {
+            display: flex;
+            align-items: center;
+        }
+
+        .pfp {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .add-friend-button {
+            background-color: rgb(24,119,242);
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 2.5px;
+            margin-right: 3px;
+            transition: color 0.2s, background-color 0.2s;
+        }
+
+        .add-friend-button:hover {
+            cursor: pointer;
+            background-color: white;
+            color: rgb(24, 119, 242);
+        }
+
+        .message-button {
+            border: none;
+            background-color: rgb(228, 224, 224);
+            color: black;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 2.5px;
+            transition: color 0.2s, background-color 0.2s;
+        }
+
+        .message-button:hover {
+            cursor: pointer;
+            background-color: rgb(117, 113, 113);
+            color: rgb(228, 224, 224);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="profile-picture">
+            <img class="pfp" src="images/p3.jpg" alt="cute-cat-photo">
+            <div class="name">Oliver Cat</div>
+        </div>
+        <div class="button">
+            <button class="add-friend-button" type="button">Add Friend</button>
+            <button class="message-button" type="button">Message</button>
+        </div>
+    </div>
+</body>
+</html>
