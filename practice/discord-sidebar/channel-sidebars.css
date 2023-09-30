@@ -1,0 +1,42 @@
+.channels-sidebars {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    left: 70px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: rgb(55, 55, 55);
+    font-family: Arial;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.name {
+    color: rgb(150, 150, 150);
+    font-size: 13px;
+}
+
+.name:hover, .plus-icon:hover  {
+    color: white;
+}
+
+.plus-icon {
+    color: rgb(150, 150, 150);
+    font-size: 24px;
+}
+
+.channel {
+    color: rgb(150, 150, 150);
+    margin-bottom: 15px;
+}
