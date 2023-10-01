@@ -1,6 +1,6 @@
 .thumbnail {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .thumbnail-row {
@@ -10,7 +10,7 @@
 
 .grid-style {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 35px;
 }

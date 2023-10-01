@@ -69,6 +69,31 @@
     margin-left: -8px;
     border-radius: 0 40px 40px 0;
     margin-right: 14px;
+    position: relative;
+}
+
+.search-button .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s, background-color 0.15s;
+}
+
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 214, 214);
 }
 
 .voice-search-icon {
