@@ -76,7 +76,9 @@
 }
 
 .search-button,
-.voice-search-icon {
+.voice-search-icon,
+.upload-icon-container,
+.noti-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -84,7 +86,10 @@
 }
 
 .search-button .tooltip,
-.voice-search-icon .tooltip {
+.voice-search-icon .tooltip,
+.upload-icon-container .tooltip,
+.noti-container .tooltip {
+    font-family: Roboto, Arial;
     position: absolute;
     background-color: gray;
     color: white;
@@ -102,12 +107,16 @@
 }
 
 .search-button:hover .tooltip,
-.voice-search-icon:hover .tooltip {
+.voice-search-icon:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.noti-container:hover .tooltip {
     opacity: 1;
 }
 
 .search-button:hover,
-.voice-search-icon:hover {
+.voice-search-icon:hover,
+.upload-icon-container:hover,
+.noti-container:hover {
     cursor: pointer;
     background-color: rgb(214, 214, 214);
 }
@@ -151,6 +160,10 @@
     height: 32px;
     width: auto;
     border-radius: 16px;
+}
+
+.profile-picture:hover {
+    cursor: pointer;
 }
 
 .noti-container {
