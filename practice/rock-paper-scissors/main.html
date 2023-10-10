@@ -18,6 +18,11 @@
             <button class="scissors-button" onclick="
                 playGame('scissors');
             ">Scissors</button>
+            <button class="reset-button" onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            ">Reset Score</button>
         </div>
         <script>
             const score = {
