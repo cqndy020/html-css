@@ -1,0 +1,15 @@
+.flip-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.head-tail {
+    width: 130px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.head-tail:hover {
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
