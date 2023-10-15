@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css">
     <title>Coinflip</title>
 </head>
 <body>
-    <main>
+    <main class="general-style">
         <div>
+            <div class="title">
+                <h1 class="coin-flip-title">Coin Flip</h2>
+            </div>
             <div class="flip-buttons">   
                 <button class="head-tail" onclick="guessFlip('heads')">Heads</button>
                 <button class="head-tail" onclick="guessFlip('tails')">Tails</button>
             </div>
         </div>
         <script>
-            function randomFlip() {
+            function guessFlip(playerGuess) {
                 const randomNumber = Math.random();
                 const result = randomNumber < 0.5 ? 'heads' : 'tails';
-            return result;
-            }
-            
-            function guessFlip(randomFlip) {
-                const guess = 'heads';
-                console.log(guess === result ? 'You win!' : 'You lose.');
-            }
-            
+                console.log(playerGuess === result ? 'You win!' : 'You lose.');
+            } 
         </script>
     </main>
 </body>
