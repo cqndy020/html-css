@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Name" class="js-name" onkeydown="handleNameKeydown();">
+        <button onclick="submitName();">Submit</button>
+        <p class="js-result"></p>
+    </div>
+    <script>
+        function handleNameKeydown() {
+            if (event.key === 'Enter') {
+                submitName();
+            }
+        }
+
+        function submitName() {
+            const nameElement = document.querySelector('.js-name');
+            let inputName = nameElement.value;
+            document.querySelector('.js-result').innerHTML = `Your name is: ${inputName}`;
+        }
+    </script>
+</body>
+</html>
