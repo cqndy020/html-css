@@ -10,6 +10,8 @@
         <input type="text" placeholder="Name" class="js-name" onkeydown="handleNameKeydown();">
         <button onclick="submitName();">Submit</button>
         <p class="js-result"></p>
+        <input type="text" class="js-keyup" onkeyup="handleNameKeyup();">
+        <p class="js-type-result"></p>
     </div>
     <script>
         function handleNameKeydown() {
@@ -22,6 +24,12 @@
             const nameElement = document.querySelector('.js-name');
             let inputName = nameElement.value;
             document.querySelector('.js-result').innerHTML = `Your name is: ${inputName}`;
+        }
+
+        function handleNameKeyup() {
+            const typeElement = document.querySelector(".js-keyup");
+            let typeInput = typeElement.value;
+            document.querySelector('.js-type-result').innerHTML = `${typeInput}`;
         }
     </script>
 </body>
