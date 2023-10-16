@@ -31,7 +31,7 @@
 
         function calculateTotal() {
             const inputCost = document.querySelector('.js-cost-input');
-            let cost = Number(inputCost.value);
+            let cost = Number(inputCost.value).toFixed(2);
 
             if (cost < 40) {
                 cost += 10;
