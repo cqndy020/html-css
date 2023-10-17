@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Script Practice</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h3>Cart</h3>
-    <button onclick="
+      <h3>Cart</h3>
+      <button
+        onclick="
     console.log(cartQuantity);
-        ">Show Quantity</button>
-    <button onclick="
+    updateQuantity();
+        "
+      >
+        Show Quantity
+      </button>
+      <button
+        onclick="
     cartQuantity += 1;
-    ">Add to Cart</button>
-    <button onclick="
+    updateQuantity();
+    "
+      >
+        Add to Cart
+      </button>
+      <button
+        onclick="
     cartQuantity += 2;
-    ">+2</button>
-    <button onclick="
+    updateQuantity();
+    "
+      >
+        +2
+      </button>
+      <button
+        onclick="
     cartQuantity += 3;
-    ">+3</button>
-    <button onclick="
+    updateQuantity();
+    "
+      >
+        +3
+      </button>
+      <button
+        onclick="
+    cartQuantity += 4;
+    updateQuantity();
+        ">
+        +4
+      </button>
+      <button
+        onclick="
+    cartQuantity += 5;
+    updateQuantity();
+        ">
+        +5
+      </button>
+      <button
+        onclick="
     cartQuantity = 0;
-    console.log('Cart was reset.')
-    ">Reset Cart</button>
+    console.log('Cart was reset.');
+    updateQuantity();
+    "
+      >
+        Reset Cart
+      </button>
+      <button
+        onclick="
+    cartQuantity -= 2;
+    updateQuantity();
+        ">
+        -2
+      </button>
+      <button
+        onclick="
+    cartQuantity -= 3;
+    updateQuantity();
+        ">
+        -3
+      </button>
+      <p class="js-result"></p>
     </main>
     <script>
-        let cartQuantity = 0;
+      let cartQuantity = 0;
+      function updateQuantity() {
+        document.querySelector('.js-result').innerHTML = `Cart quantity: ${cartQuantity}`;
+      }
+      updateQuantity();
     </script>
-</body>
+  </body>
 </html>
