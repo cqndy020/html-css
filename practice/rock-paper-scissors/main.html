@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <main>
-        <h2>Rock Paper Scissors</h2>
+        <h2 class="title">Rock Paper Scissors</h2>
         <div>
-            <button class="rock-button" onclick="
+            <button class="play-buttons" onclick="
                 playGame('rock');
                 updateResult();
                 updateMove();
-                ">Rock</button>
-            <button class="paper-button" onclick="
+                "><img src="images/rock-emoji.png" alt="rock-image" class="move-button"></button>
+            <button class="play-buttons" onclick="
                 playGame('paper');
-            ">Paper</button>
-            <button class="scissors-button" onclick="
+            "><img src="images/paper-emoji.png" alt="paper-image" class="move-button"></button>
+            <button class="play-buttons" onclick="
                 playGame('scissors');
-            ">Scissors</button>
+            "><img src="images/scissors-emoji.png" alt="scissors-image" class="move-button"></button>
         </div>
         <div>
             <p class="js-result"></p>
