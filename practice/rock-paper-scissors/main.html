@@ -23,9 +23,9 @@
             "><img src="images/scissors-emoji.png" alt="scissors-image" class="move-button"></button>
         </div>
         <div>
-            <p class="js-result"></p>
+            <p class="js-result result"></p>
             <p class="js-move"></p>
-            <p class="js-score"></p>
+            <p class="js-score score"></p>
         </div>
         <div>
             <button class="reset-button" onclick="
@@ -101,7 +101,7 @@
 
                 updateScore();
                 document.querySelector('.js-result').innerHTML = result;
-                document.querySelector('.js-move').innerHTML = `You ${playerMove} - ${computerMove} Computer`;
+                document.querySelector('.js-move').innerHTML = `You <img src= "images/${playerMove}-emoji.png" alt="${playerMove}-image" class="move-button"> - <img src= "images/${computerMove}-emoji.png" alt="${computerMove}-image" class="move-button"> Computer`;
             }
 
             function updateScore() {
