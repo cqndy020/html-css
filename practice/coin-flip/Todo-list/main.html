@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List Practice</title>
+    <style>
+        .title {
+            font-family: Roboto, Arial;
+            font-size: 20px;
+            font-weight: 550;
+        }
+        
+        .list-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .js-input-name {
+            border: none;
+            border-color: black;
+            background-color: rgb(41, 184, 184);
+            border-radius: 7px;
+            padding: 8px 8px;
+        }
+
+        .add-button {
+            padding: 8px 8px;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(177, 177, 177);
+            cursor: pointer;
+        }
+
+        
+        ::placeholder {
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <p>Todo List Practice 1</p>
+    <div class="list-section">
+        <p class="title">To-do List Practice 1</p>
         <input type="text" placeholder="Todo name" class="js-input-name">
-        <button onclick="addList();">Add</button>
+        <button class="add-button" onclick="addList();">Add</button>
         <p class="show-input-js"></p>
     </div>
     <div>
